@@ -142,9 +142,14 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 bg-gradient-to-br from-white to-blue-50/50 border-0 shadow-lg animate-fade-in-scale">
-              <div className="aspect-video bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 rounded-t-lg relative overflow-hidden">
+              <div
+                className="aspect-video rounded-t-lg relative overflow-hidden bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/newsApp.png')",
+                }}
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20"></div>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-blue-400/20 to-purple-600/20"></div>
+                {/* <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-blue-400/20 to-purple-600/20"></div> */}
               </div>
               <CardHeader>
                 <CardTitle className="flex items-center justify-between group-hover:text-blue-600 transition-colors duration-300">
@@ -206,10 +211,11 @@ export default function Portfolio() {
               className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 bg-gradient-to-br from-white to-green-50/50 border-0 shadow-lg animate-fade-in-scale"
               style={{ animationDelay: "0.2s" }}
             >
-              <div className="aspect-video bg-gradient-to-br from-green-500 via-teal-600 to-emerald-700 rounded-t-lg relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20"></div>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-green-400/20 to-teal-600/20"></div>
-              </div>
+              <img
+                src="https://research.fhstp.ac.at/var/site/storage/images/_aliases/content_third/5/6/3/7/1927365-1-ger-DE/2.jpg"
+                alt="NexNews Preview"
+                className="aspect-video object-cover w-full rounded-t-lg"
+              />
               <CardHeader>
                 <CardTitle className="flex items-center justify-between group-hover:text-green-600 transition-colors duration-300">
                   FictoCheck
@@ -273,10 +279,11 @@ export default function Portfolio() {
               className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 bg-gradient-to-br from-white to-orange-50/50 border-0 shadow-lg animate-fade-in-scale"
               style={{ animationDelay: "0.4s" }}
             >
-              <div className="aspect-video bg-gradient-to-br from-orange-500 via-red-600 to-pink-700 rounded-t-lg relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20"></div>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-orange-400/20 to-red-600/20"></div>
-              </div>
+              <img
+                src="https://play-lh.googleusercontent.com/9cStI0kHWmjALUEVwZwkuPhkwtuesVwSgQeHUA4YEqGRzF31yXYjjdpAQkW5DGqp2dE"
+                alt="NexNews Preview"
+                className="aspect-video object-cover w-full rounded-t-lg"
+              />
               <CardHeader>
                 <CardTitle className="flex items-center justify-between group-hover:text-orange-600 transition-colors duration-300">
                   ResumeNest
